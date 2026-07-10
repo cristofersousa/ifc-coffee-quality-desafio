@@ -1,5 +1,7 @@
 # ☕ IFC-Coffee Quality Challenge
 
+![](wireframe_ifc_coffee.png)
+
 ## Descrição
 
 Uma cooperativa de cafés especiais está realizando um campeonato interno para avaliar a qualidade de diferentes amostras de café.
@@ -15,7 +17,7 @@ O sistema deve permitir que os usuários:
 * Consultem o ranking final;
 * Naveguem entre as páginas utilizando **Vue Router**.
 
----
+*Todo material de referencia que o Professor Fábio Longo desenvolveu na disciplina pode ser encontrado no repositório [IFC-Fábio Longo - DevWeb-II](https://github.com/ldmfabio/devweb-II)
 
 # Objetivo
 
