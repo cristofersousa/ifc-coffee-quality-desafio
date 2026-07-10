@@ -320,6 +320,23 @@ Exemplo:
 
 ---
 
+# Entrega
+Cada aluno deve entregar:
+
+Link do repositório (GitHub) ou pasta compactada no classroom
+Um arquivo README.md com:
+ - Print das 3 telas funcionando
+ - Breve explicação de onde usou cada conceito (Etapas 2 a 6)
+
+# Critérios de Avaliação
+
+40% - Funcionalidade (todas as telas e cálculos funcionando)
+30% - Uso correto dos conceitos Vue.js
+15% - Organização de componentes e código limpo
+10% - Design/UX (simples, mas organizado)
+5% - README + prints
+
+
 # Tempo de Desenvolvimento
 
 ⏱️ Tempo estimado: **2 horas**
