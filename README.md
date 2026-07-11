@@ -125,6 +125,8 @@ Utilize os seguintes cafés como base da aplicação:
 
 # Wireframe
 
+![](1-home.png)
+
 ## Página Inicial (/)
 
 ```text
@@ -144,6 +146,10 @@ Utilize os seguintes cafés como base da aplicação:
 ---
 
 ## Página Cafés (/cafes)
+
+![](3-ranking.png)
+
+
 
 ```text
 +--------------------------------------------------+
@@ -175,6 +181,9 @@ Utilize os seguintes cafés como base da aplicação:
 ---
 
 ## Página Avaliação (/avaliar)
+
+![](2-avaliacoes.png)
+
 
 ```text
 +--------------------------------------------------+
