@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Importação das Views (Páginas)
 import HomeView from '../views/HomeView.vue'
-// import AvaliacoesView from '../views/AvaliacoesView.vue'
-// import RankingView from '../views/RankingView.vue'
+import CafesView from '../views/CafesView.vue'
+import AvaliarView from '../views/AvaliarView.vue'
+import RankingView from '../views/RankingView.vue'
 
 const routes = [
   {
@@ -13,36 +13,34 @@ const routes = [
     meta: { title: 'Dashboard - Campeonato de Cafés' }
   },
   {
-    path: '/avaliacoes',
-    name: 'avaliacoes',
-    // component: AvaliacoesView,
-    meta: { title: 'Avaliações' }
+    path: '/cafes',
+    name: 'cafes',
+    component: CafesView,
+    meta: { title: 'Cafés' }
+  },
+  {
+    path: '/avaliar',
+    name: 'avaliar',
+    component: AvaliarView,
+    alias: ['/avaliacoes'],
+    meta: { title: 'Avaliação' }
   },
   {
     path: '/ranking',
     name: 'ranking',
-    // component: RankingView,
+    component: RankingView,
     meta: { title: 'Ranking Geral' }
-  },
-  // Rota coringa (404) - Opcional
-  // {
-  //   path: '/:pathMatch(.*)*',
-  //   name: 'not-found',
-  //   component: () => import('../views/NotFoundView.vue'),
-  //   meta: { title: 'Página não encontrada' }
-  // }
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  // Scroll behavior (voltar ao topo ao mudar de rota)
   scrollBehavior() {
     return { top: 0 }
   }
 })
 
-// Atualizar título da página dinamicamente
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || 'Campeonato SCA'
   next()
