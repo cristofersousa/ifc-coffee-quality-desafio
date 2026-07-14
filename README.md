@@ -17,7 +17,25 @@ O sistema deve permitir que os usuários:
 * Consultem o ranking final;
 * Naveguem entre as páginas utilizando **Vue Router**.
 
-*Todo material de referencia que o Professor Fábio Longo desenvolveu na disciplina pode ser encontrado no repositório [IFC-Fábio Longo - DevWeb-II](https://github.com/ldmfabio/devweb-II)
+
+```sh
+ifc-coffee-quality-desafio/
+│
+├── README.md
+│
+docs/
+├── 01-contexto.md
+├── 02-requisitos-funcionais.md
+├── 03-criterios-avaliacao.md
+├── 04-wireframes.md
+├── 05-backlog.md
+├── 06-entrega.md
+└── imagens/
+    ├── home.png
+    ├── avaliacoes.png
+    ├── ranking.png
+    └── detalhes.png
+```
 
 # Objetivo
 
@@ -79,18 +97,6 @@ Responsável por exibir as informações de um café.
 
 Responsável por exibir uma posição no ranking.
 
-## Rotas
-
-Criar as seguintes rotas:
-
-| Rota     | Descrição               |
-| -------- | ----------------------- |
-| /        | Página Inicial          |
-| /cafes   | Lista de Cafés          |
-| /avaliar | Formulário de Avaliação |
-| /ranking | Ranking Final           |
-
----
 
 # Dados Iniciais
 
@@ -232,41 +238,7 @@ Finalização:
 
 ---
 
-# Estrutura Sugerida
 
-```text
-src/
-│
-├── components/
-│   ├── CoffeeCard.vue
-│   └── RankingItem.vue
-│
-├── views/
-│   ├── HomeView.vue
-│   ├── CafesView.vue
-│   ├── AvaliarView.vue
-│   └── RankingView.vue
-│
-├── router/
-│   └── index.js
-│
-└── App.vue
-```
-
----
-
-# Entregáveis
-
-Ao final da atividade o aluno deverá entregar:
-
-* Projeto Vue funcionando;
-* Rotas implementadas;
-* Componentes reutilizáveis;
-* Lista de cafés renderizada dinamicamente;
-* Formulário de avaliação funcional;
-* Ranking exibindo as médias cadastradas.
-
----
 
 # Desafios Extras (Opcional)
 
@@ -328,26 +300,3 @@ Exemplo:
 | **Total**             | **15** |
 
 ---
-
-# Entrega
-Cada aluno deve entregar:
-
-Link do repositório (GitHub) ou pasta compactada no classroom
-Um arquivo README.md com:
- - Print das 3 telas funcionando
- - Breve explicação de onde usou cada conceito (Etapas 2 a 6)
-
-# Critérios de Avaliação
-
-40% - Funcionalidade (todas as telas e cálculos funcionando)
-30% - Uso correto dos conceitos Vue.js
-15% - Organização de componentes e código limpo
-10% - Design/UX (simples, mas organizado)
-5% - README + prints
-
-
-# Tempo de Desenvolvimento
-
-⏱️ Tempo estimado: **2 horas**
-
-Boa sorte e bom desenvolvimento! ☕🚀
