@@ -1,302 +1,162 @@
-# ☕ IFC-Coffee Quality Challenge
+# ☕ IFC Coffee Quality Challenge 2026
 
-![](wireframe_ifc_coffee.png)
+![Coffee Quality Challenge](docs/assets/img/wireframe_ifc_coffee.png)
 
-## Descrição
+## Links de Apoio
 
-Uma cooperativa de cafés especiais está realizando um campeonato interno para avaliar a qualidade de diferentes amostras de café.
+- [Link - Quadro de Tarefas](https://github.com/users/cristofersousa/projects/1)
+- [Link - Surge](https://ifc-cafe.surge.sh/)
 
-Cada café participante será analisado por avaliadores que atribuirão notas para critérios sensoriais inspirados em metodologias utilizadas na avaliação de cafés especiais.
+```sh
+README.md
+│
+├── O que é o projeto?
+├── Como executar?
+├── Onde está a documentação?
+│
+└── docs/
+    ├── contexto
+    ├── requisitos
+    ├── backlog
+    ├── wireframes
+    ├── entrega
+    └── critérios
 
-Seu objetivo é desenvolver uma aplicação utilizando **Vue.js** para auxiliar na organização dessas avaliações e exibir um ranking dos cafés participantes.
+```
+
+## Sobre o Projeto
+
+A Specialty Coffee Association (SCA) realiza campeonatos de avaliação sensorial para determinar a qualidade de cafés especiais.
+
+Neste desafio você fará parte da **Squad Colmeia**, equipe responsável pelo desenvolvimento da primeira versão do sistema **Coffee Quality Challenge 2026**.
+
+Seu objetivo será desenvolver uma aplicação utilizando Vue.js para auxiliar juízes na avaliação dos cafés participantes e permitir a visualização do ranking do campeonato.
 
 O sistema deve permitir que os usuários:
 
-* Visualizem os cafés participantes;
-* Registrem avaliações;
-* Consultem o ranking final;
-* Naveguem entre as páginas utilizando **Vue Router**.
+- Visualizem os cafés participantes;
+- Registrem avaliações;
+- Consultem o ranking final;
+- Naveguem entre as páginas utilizando **Vue Router**.
 
+---
 
-```sh
+## Objetivos de Aprendizagem
+
+Durante esta atividade você deverá demonstrar conhecimentos sobre:
+
+- Vue.js
+- Componentização
+- Templates
+- Reatividade
+- Listas
+- Vue Router
+- Organização de projetos Front-end
+
+---
+
+## Tecnologias
+
+- Vue 3
+- Vue Router
+- Vite
+- JavaScript
+- HTML
+- CSS
+
+---
+
+## Tempo de Desenvolvimento
+
+⏱️ Tempo estimado: **2 horas**
+
+---
+
+# 📚 Documentação do Projeto
+
+Toda a documentação necessária para desenvolvimento encontra-se na pasta `docs`.
+
+## Documentos
+
+### 01 - Contexto
+
+Descrição do problema de negócio e visão geral do produto.
+
+➡️ [Abrir Contexto](./docs/01-contexto.md)
+
+---
+
+### 02 - Requisitos Funcionais
+
+Lista completa de funcionalidades esperadas.
+
+➡️ [Abrir Requisitos Funcionais](./docs/02-requisitos-funcionais.md)
+
+---
+
+### 03 - Critérios de Avaliação
+
+Como o projeto será corrigido.
+
+➡️ [Abrir Critérios de Avaliação](./docs/03-criterios-avaliacao.md)
+
+---
+
+### 04 - Wireframes
+
+Protótipos visuais das telas.
+
+➡️ [Abrir Wireframes](./docs/04-wireframes.md)
+
+---
+
+### 05 - Backlog
+
+Lista de tarefas e histórias da Sprint.
+
+➡️ [Abrir Backlog](./docs/05-backlog.md)
+
+---
+
+### 06 - Entrega
+
+Instruções para submissão do projeto.
+
+➡️ [Abrir Entrega](./docs/06-entrega.md)
+
+---
+
+# Guia - Estrutura do Repositório:
+
+```txt
 ifc-coffee-quality-desafio/
 │
 ├── README.md
 │
-docs/
-├── 01-contexto.md
-├── 02-requisitos-funcionais.md
-├── 03-criterios-avaliacao.md
-├── 04-wireframes.md
-├── 05-backlog.md
-├── 06-entrega.md
-└── imagens/
-    ├── home.png
-    ├── avaliacoes.png
-    ├── ranking.png
-    └── detalhes.png
+└── docs/
+    ├── 01-contexto.md
+    ├── 02-requisitos-funcionais.md
+    ├── 03-criterios-avaliacao.md
+    ├── 04-wireframes.md
+    ├── 05-backlog.md
+    ├── 06-entrega.md
+    └── imagens/
 ```
 
-# Objetivo
+# Referências
 
-Desenvolver uma aplicação Vue.js que permita:
-
-1. Visualizar os cafés participantes;
-2. Realizar avaliações dos cafés;
-3. Calcular a média das avaliações;
-4. Exibir um ranking dos cafés avaliados.
+Material de guia para desenvolvimento deve ser adotado do Professor Fábio Longo, que se encontra neste repositório [link](https://github.com/ldmfabio/devweb-II) que é referente a disciplina DEV Web II.
 
 ---
 
-# Regras de Negócio
+# Boa sorte!
 
-Cada café deve possuir:
+Agora você faz parte da **Squad Colmeia**.
 
-* Nome;
-* Região de Origem.
+O Product Owner entregou os requisitos.
 
-Cada avaliação deve conter notas de **0 a 10** para os seguintes critérios:
+Os wireframes foram aprovados.
 
-* Aroma
-* Doçura
-* Acidez
-* Corpo
-* Finalização
+O backlog já está priorizado.
 
-A média final do café será calculada através da fórmula:
-
-```text
-(Aroma + Doçura + Acidez + Corpo + Finalização) / 5
-```
-
----
-
-# Requisitos Técnicos
-
-A aplicação deve utilizar os conceitos estudados durante a disciplina.
-
-## Templates
-
-Utilizar pelo menos:
-
-```vue
-v-model
-v-if
-v-for
-```
-
-## Componentes
-
-Criar pelo menos dois componentes reutilizáveis:
-
-### CoffeeCard.vue
-
-Responsável por exibir as informações de um café.
-
-### RankingItem.vue
-
-Responsável por exibir uma posição no ranking.
-
-
-# Dados Iniciais
-
-Utilize os seguintes cafés como base da aplicação:
-
-```javascript
-[
-  {
-    id: 1,
-    nome: "Bourbon Amarelo",
-    origem: "Minas Gerais"
-  },
-  {
-    id: 2,
-    nome: "Catuaí Vermelho",
-    origem: "Paraná"
-  },
-  {
-    id: 3,
-    nome: "Arara",
-    origem: "Espírito Santo"
-  },
-  {
-    id: 4,
-    nome: "Mundo Novo",
-    origem: "Bahia"
-  }
-]
-```
-
----
-
-# Wireframe
-
-![](1-home.png)
-
-## Página Inicial (/)
-
-```text
-+--------------------------------------------------+
-|                                                  |
-|        COFFEE QUALITY CHALLENGE                  |
-|                                                  |
-| Avaliação Sensorial de Cafés Especiais           |
-|                                                  |
-| Cafés Participantes: 4                           |
-|                                                  |
-| [ Ver Cafés ]                                    |
-|                                                  |
-+--------------------------------------------------+
-```
-
----
-
-## Página Cafés (/cafes)
-
-![](3-ranking.png)
-
-
-
-```text
-+--------------------------------------------------+
-|                     CAFÉS                        |
-+--------------------------------------------------+
-
-+--------------------------+
-| Bourbon Amarelo          |
-| Minas Gerais             |
-|                          |
-| [ Avaliar ]              |
-+--------------------------+
-
-+--------------------------+
-| Catuaí Vermelho          |
-| Paraná                   |
-|                          |
-| [ Avaliar ]              |
-+--------------------------+
-
-+--------------------------+
-| Arara                    |
-| Espírito Santo           |
-|                          |
-| [ Avaliar ]              |
-+--------------------------+
-```
-
----
-
-## Página Avaliação (/avaliar)
-
-![](2-avaliacoes.png)
-
-
-```text
-+--------------------------------------------------+
-|               NOVA AVALIAÇÃO                     |
-+--------------------------------------------------+
-
-Café:
-
-[ Bourbon Amarelo         ▼ ]
-
-Aroma:
-[ 8 ]
-
-Doçura:
-[ 9 ]
-
-Acidez:
-[ 7 ]
-
-Corpo:
-[ 8 ]
-
-Finalização:
-[ 9 ]
-
-[ Salvar Avaliação ]
-```
-
----
-
-## Página Ranking (/ranking)
-
-```text
-+--------------------------------------------------+
-|                    RANKING                       |
-+--------------------------------------------------+
-
-🏆 1º Bourbon Amarelo ........ 8.7
-
-🥈 2º Arara .................. 8.3
-
-🥉 3º Catuaí Vermelho ........ 7.9
-
-4º Mundo Novo ............... 7.2
-```
-
----
-
-
-
-# Desafios Extras (Opcional)
-
-## Extra 1
-
-Exibir uma mensagem de destaque quando a média for maior ou igual a 8.
-
-Exemplo:
-
-```text
-Excelente Café ☕
-```
-
-Utilizar:
-
-```vue
-v-if
-```
-
----
-
-## Extra 2
-
-Permitir o cadastro de novos cafés.
-
-Utilizar:
-
-```vue
-v-model
-v-for
-```
-
----
-
-## Extra 3
-
-Destacar visualmente o primeiro colocado do ranking.
-
-Exemplo:
-
-```text
-🏆 Campeão do Campeonato
-```
-
----
-
-# Critérios de Avaliação
-
-| Critério              | Pontos |
-| --------------------- | -----: |
-| Estrutura Vue correta |      1 |
-| Uso de Templates      |      1 |
-| Uso de v-model        |      2 |
-| Uso de v-if           |      1 |
-| Uso de v-for          |      2 |
-| Componentização       |      3 |
-| Rotas                 |      3 |
-| Organização do código |      2 |
-| **Total**             | **15** |
-
----
+🚀 Sua missão é entregar a primeira versão do Coffee Quality Challenge.
